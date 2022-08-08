@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 NGUYEN DUY DUNG</title>
+</head>
+<body>
+<p align="center"><strong>Caculator</strong></p>
+<table>
+    <tr>
+        <td><input id="so1" type="number"></td>
+        <td><input id="so2" type="number"></td>
+    </tr>
+    <tr>
+        <th>
+            <button onclick="a()">Addition(+)</button>
+        </th>
+        <th>
+            <button onclick="b()">subtraction(-)</button>
+        </th>
+        <th>
+            <button onclick="c()">multiplication(X)</button>
+        </th>
+        <th>
+            <button onclick="d()">division(/)</button>
+        </th>
+    </tr>
+    <script>
+        function a() {
+            let giatri1 = +(document.getElementById('so1').value);
+            let giatri2 = +(document.getElementById('so2').value);
+            alert(giatri1 + giatri2);
+        }
+    </script>
+    <script>
+        function b() {
+            let giatri1 = +(document.getElementById('so1').value);
+            let giatri2 = +(document.getElementById('so2').value);
+            alert(giatri1 - giatri2);
+        }
+    </script>
+    <script>
+        function c() {
+            let giatri1 = +(document.getElementById('so1').value);
+            let giatri2 = +(document.getElementById('so2').value);
+            alert(giatri1 * giatri2);
+        }
+    </script>
+    <script>
+        function d() {
+            let giatri1 = +(document.getElementById('so1').value);
+            let giatri2 = +(document.getElementById('so2').value);
+            alert(giatri1 / giatri2);
+        }
+    </script>
+</table>
+</body>
+</html>
