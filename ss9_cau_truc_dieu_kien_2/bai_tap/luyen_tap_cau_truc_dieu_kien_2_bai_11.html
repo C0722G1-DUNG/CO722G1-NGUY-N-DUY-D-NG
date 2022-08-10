@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 11: Viết chương trình tính thuế thu nhập cá nhân-->
+<script>
+    let thunhap=+prompt('nhập thuế thu nhập');
+    let  ts= 5/100 ;
+    let tst5=10/100;
+    let tstt5=15/100;
+    if (thunhap>0&&thunhap<5000000){
+        let t= ts*thunhap;
+        alert('thuế thu nhập cá nhân là'+t+ 'đ');
+    }
+    else if (thunhap<10000000){
+        let a= tst5*thunhap;
+        alert('thuế thu nhập cá nhân là'+a+ 'đ');
+    }
+    else {
+        let b=tstt5*thunhap;
+        alert('thuế thu nhập cá nhân là'+b +'đ');
+    }
+</script>
+</body>
+</html>

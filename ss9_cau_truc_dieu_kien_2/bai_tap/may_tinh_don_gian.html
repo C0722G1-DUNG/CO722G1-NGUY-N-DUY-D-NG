@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CO722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<input id="nhapso" type="text">
+<table>
+    <tr>
+        <td>
+            <button onclick="mot()">1</button>
+        </td>
+        <td>
+            <button onclick="hai()">2</button>
+        </td>
+        <td>
+            <button onclick="ba()">3</button>
+        </td>
+        <td>
+            <button onclick="cong()">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="bon()">4</button>
+        </td>
+        <td>
+            <button onclick="nam()">5</button>
+        </td>
+        <td>
+            <button onclick="sau()">6</button>
+        </td>
+        <td>
+            <button onclick="tru()">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="bay()">7</button>
+        </td>
+        <td>
+            <button onclick="tam()">8</button>
+        </td>
+        <td>
+            <button onclick="chin()">9</button>
+        </td>
+        <td>
+            <button onclick="nhan()">x</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="xoa()">C</button>
+        </td>
+        <td>
+            <button type="button" onclick="khong()">0</button>
+        </td>
+        <td>
+            <button type="button" onclick="bang()">=</button>
+        </td>
+        <td>
+            <button type="button" onclick="chia()">/</button>
+        </td>
+    </tr>
+</table>
+<script>
+    function mot() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '1';
+    }
+
+    function hai() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '2';
+    }
+
+    function ba() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '3';
+    }
+
+    function bon() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '4';
+    }
+
+    function nam() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '5';
+    }
+
+    function sau() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '6';
+    }
+
+    function bay() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '7';
+    }
+
+    function tam() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '8';
+    }
+
+    function chin() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '9';
+    }
+
+    function khong() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '0';
+    }
+
+    function cong() {
+        let nhap = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = nhap + '+';
+    }
+
+    function tru() {
+        let str = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = str + "-";
+    }
+
+    function nhan() {
+        let str = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = str + "*";
+    }
+
+    function chia() {
+        let str = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = str + "/";
+    }
+
+    function bang() {
+        let str = document.getElementById('nhapso').value;
+        document.getElementById('nhapso').value = eval(str);
+    }
+    function xoa() {
+    let nhap= document.getElementById('nhapso').value;
+    document.getElementById('nhapso').value = "";
+    }
+</script>
+</body>
+</html>

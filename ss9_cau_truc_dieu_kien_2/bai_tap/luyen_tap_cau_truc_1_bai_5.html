@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<script>
+    let diem= +prompt('điểm học sinh');
+    let giuaky=+prompt('điểm giữa kỳ');
+    let cuoiky=+prompt('điểm cuối kỳ');
+    let tong = (diem +giuaky*2 +cuoiky*3)/6 ;
+    if (tong>8){
+        alert('giỏi');
+    }
+    else  if (6<=tong){
+        alert('khá');}
+    else {
+        alert('trung bình');
+    }
+</script>
+</body>
+</html>

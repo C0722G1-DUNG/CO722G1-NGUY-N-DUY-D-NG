@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 10: Viết chương trình tính giá điện.-->
+<script>
+    let sotiendien= +prompt('số tiền điện');
+    let tiendau= 1000 ;
+    let tientiep=2500 ;
+    let tiencuoi=3000 ;
+    if (sotiendien <= 0){
+        alert('vui lòng nhập lại');
+    }
+    else if (sotiendien <100){
+        let t= sotiendien*tiendau;
+        alert('số tiền điện là' + t+' đ bạn rất tiết kiệm');
+    }
+    else if (sotiendien<150){
+        let a= sotiendien*tiendau + tientiep*(sotiendien-100);
+        alert('số tiền điên là' +a+ 'đ mức điện sài bình thường');
+    }
+    else if (sotiendien>200){
+        let b= sotiendien+tiendau+(sotiendien*tiencuoi)+(sotiendien-150);
+        alert('số tiền điện là' +b+ ' đ bạn sài rất nhiều');
+    }
+</script>
+</body>
+</html>

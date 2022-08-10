@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<p><strong>Tính chỉ số cân nặng</strong></p>
+<table>
+    <tr>
+        <th>nhập cân nặng</th>
+        <td><input id="cannang" type="number"></td>
+    </tr>
+    <tr>
+        <th>nhập chiều cao</th>
+        <td><input id="chieucao" type="number"></td>
+    </tr>
+    <button onclick="đo()">kiểm tra</button>
+</table>
+    <p id="result"></p>
+<script>
+    function đo() {
+        let cn = (document.getElementById('cannang').value);
+        let cc = (document.getElementById('chieucao').value);
+        let bmi=  cn / ( Math.pow(cc, 2));
+        if(bmi<16){
+            result = "gầy";
+        }
+        else if (bmi<25){
+            result ="bình thường"
+        }
+        else if (bmi<30){
+            result = "béo phì"
+        }
+        document.getElementById("result").innerHTML = "Chỉ số BMI là: " + bmi + "<b>"+ result + "</b>";
+    }
+</script>
+</body>
+</html>

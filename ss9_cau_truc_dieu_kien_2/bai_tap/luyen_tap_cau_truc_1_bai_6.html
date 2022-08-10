@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng-->
+<script>
+    let doanhso = +prompt('nhập doanh số');
+    if (doanhso < 100) {
+        let hoahong = doanhso * (5 / 100);
+        alert('hoa hồng nhận được'+hoahong);
+    } else if (doanhso <= 300) {
+        let hoahong = doanhso * (10 / 100);
+        alert('hoa hồng nhận được' +hoahong);
+    } else {
+        let hoahong = doanhso * (20 / 100);
+        alert('hoa hồng nhận được' +hoahong);
+    }
+</script>
+</body>
+</html>

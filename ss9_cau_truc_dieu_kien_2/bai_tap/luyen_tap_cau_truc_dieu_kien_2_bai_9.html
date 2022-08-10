@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:-->
+<script>
+    let a=+prompt('cạnh a');
+    let b=+prompt('cạnh b');
+    let c=+prompt('cạnh c');
+    if (a>0&& b>0 &&c>0){
+        if (a+b > c && b+c >a &&a+c>b){
+            alert('a,b,clà cạnh tam giác');
+        }
+        else {
+            alert('a,b,c không phải cạnh của tam giác')}
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 7: Giải phương trình bậc 2.-->
+<script>
+    let a= +prompt('nhập a');
+    let b= +prompt('nhập b');
+    let c= +prompt('nhập c');
+    let denta= Math.pow(b,2)-(4*a*c);
+    let x1= (-b+ Math.sqrt(denta))/(2*a);
+    let x2= (-b- Math.sqrt(denta))/(2*a);
+    let x= -b/(2*a);
+    if (denta < 0){
+        alert('vô nghiệm');
+    }
+    else if (denta ===0){
+        alert('phương trình có nghiệm kép' +x);
+    }
+    else{
+        alert('có 2 nghiệm phân biệt' +x1 +'và'+x2);}
+</script>
+</body>
+</html>
