@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.-->
+<SCRIPT>
+    let a= 0;
+    let b= 1;
+    let tong;
+    document.write(a+"<br>");
+    document.write(b+"<br>");
+    for (let i=0 ;i<40;i++){
+        tong= a+b;
+        document.write(tong+"<br>");
+        a=b;
+        b=tong;
+        if (tong %5 ===0){
+            break
+        }
+    }
+</SCRIPT>
+</body>
+</html>

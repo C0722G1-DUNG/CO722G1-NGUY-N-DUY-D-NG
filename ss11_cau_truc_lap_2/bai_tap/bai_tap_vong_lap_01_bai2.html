@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<!--Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ.-->
+<script>
+    let t;
+    do {
+         t= +prompt('nhập nhiệt độ vào');
+        if (t<20){
+            alert(' tăng nhiệt độ');}
+            if (t>100){
+                alert(' giảm nhiệt độ');}
+
+    }while (t>100||t<20)
+
+
+</script>
+</body>
+</html>

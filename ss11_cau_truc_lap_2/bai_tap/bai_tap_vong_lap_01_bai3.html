@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CO722G1 Nguyễn Duy Dũng</title>
+</head>
+<body><!--Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.-->
+<script>
+    let a= 0;
+    let b=1 ;
+    let tong=a+b;
+    document.write(a+"<br>");
+    document.write(b+"<br>");
+    for (let i=0 ;i<17;i++){
+        tong=a+b;
+        document.write(tong+"<br>");
+        a=b;
+        b=tong;
+    }
+
+</script>
+</body>
+</html>
