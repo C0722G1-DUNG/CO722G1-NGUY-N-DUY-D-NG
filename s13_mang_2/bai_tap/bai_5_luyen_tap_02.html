@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.-->
+<script>
+    let arr= [];
+    let count=0;
+    for (let i=0;i<3;i++){
+        arr[i]= +prompt('nhập phần tử chuỗi thứ nhất'+i);
+    }
+    let arr1= [];
+    for (let j=0;j<3;j++){
+        arr1[j]= +prompt('nhập phần tử chuỗi thứ hai'+j);}
+    if (arr1.length === arr.length){
+        for (let a=0;a<arr.length;a++){
+        if (arr[a]!==arr1[a]){
+            count++;
+        }
+        }
+    if (count ===0){
+        alert('giống');
+    }
+    else{
+        alert('không giống');
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
