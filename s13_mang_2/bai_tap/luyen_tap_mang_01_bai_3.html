@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó.
+ In ra giá trị trung bình của các phần tử trong mảng.-->
+<SCRIPT>
+    let num= [1,2,4,7,89,4,2];
+    let max=0;
+    let tB= 0;
+    for (let i=0; i<num.length;i++){
+        tB+=(num[i])/num.length;
+        if (num[i]>max){
+            max= num[i];
+        }
+    }document.write('giá trị max'+max+'giá trị tb là'+tB);
+</SCRIPT>
+</body>
+</html>

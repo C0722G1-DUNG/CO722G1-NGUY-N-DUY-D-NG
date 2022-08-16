@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CO722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<input id="hienThi" type="text">
+<button type="button" onclick="dich()">Dịch</button>
+<p id="result"></p>
+<script>
+function dich() {
+    let eng = ["apple", "banana", "pen", "book"];
+    let vn = ["táo", "chuối", "bút", "sách"];
+    let result = "";
+    let hienThi = document.getElementById('hienThi').value;
+    for (let i = 0; i < eng.length; i++) {
+        if (hienThi === eng[i]) {
+            result = vn[i];
+            document.getElementById('result').innerHTML = result;
+       break;
+        }else {
+            document.getElementById('result').innerHTML='không có từ này';
+        }
+    }
+}
+// <!--// cách2-->
+<!--<script>-->
+<!--function dich() {-->
+<!--    let eng = ["apple", "banana", "pen", "book"];-->
+<!--    let vn = ["táo", "chuối", "bút", "sách"];-->
+<!--    let index =-1;-->
+<!--    let hienThi = document.getElementById('hienThi').value;-->
+<!--    for (let i = 0; i < eng.length; i++) {-->
+<!--        if (hienThi === eng[i]) {-->
+<!--            index=i;-->
+<!--            break;-->
+<!--        }-->
+<!--    }-->
+<!--    if (index!=-1){-->
+<!--        document.getElementById('result').innerText = vn[index];-->
+<!--    }else {-->
+<!--        document.getElementById('result').innerText = "no"-->
+<!--    }-->
+<!--}-->
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<!--Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.-->
+<script>
+    let num= [1,2,3,5,7];
+    let max =0;
+    let v=0;
+    for (let i=0;i<num.length;i++){
+        if (num[i]>max){
+            max=num[i];
+            v=i;
+        }
+    }document.write('số lớn nhất'+max+'vị trí'+v);
+</script>
+</body>
+</html>
