@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy DŨNG</title>
+</head>
+<body>
+<!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.-->
+<script>
+    let arr = [1, 2, 3, 4];
+let tam ;
+    function daoCho(arr) {
+        for (let i = 0; i < (arr.length / 2); i++) {
+             tam = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = tam;
+        }
+        document.write(arr.toString());
+    }
+
+    daoCho(arr);
+</script>
+</body>
+</html>

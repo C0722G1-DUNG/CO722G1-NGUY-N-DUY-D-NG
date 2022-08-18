@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<!--Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.-->
+<!--Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+<SCRIPT>
+ let nhap=prompt('nhập ký tự vào');
+ function checkIn(str) {
+    if (typeof str===Number){
+         return 'true';
+    }
+    else {
+        return 'false';
+    }
+ }document.write(checkIn(nhap));
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. -->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1-->
+<SCRIPT>
+    let arr=[1,2,3,4,5,6,1,2,2];
+    let num1=+prompt('nhâp số vào');
+    function checkNum(num1,arr) {
+        let coutn=0;
+        for (let i = 0; i < arr.length; i++) {
+            if (num1 === arr[i]) {
+                coutn++;
+                document.write(coutn);
+            }
+        }
+    }checkNum(num1,arr);
+</SCRIPT>
+</body>
+</html>

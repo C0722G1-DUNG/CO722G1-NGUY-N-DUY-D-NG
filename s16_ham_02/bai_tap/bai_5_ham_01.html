@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<script>
+    let star =['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' ,'Regulus'];
+    let constellation =[ 'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'Major', 'Leo'];
+    let check= prompt('nhập vào đây');
+    let result= '';
+    function checkIn(star,constellation,check,result) {
+    for (let i=0;i<star.length;i++){
+        if (check===star[i]){
+            document.write(result= constellation[i]);
+            break;
+        }
+        // else {
+        //    document.write('không có');
+        // }
+    }
+    }
+    checkIn(star,constellation,check,result);
+</script>
+</body>
+</html>

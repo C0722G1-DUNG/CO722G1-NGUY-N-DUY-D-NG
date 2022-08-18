@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+<script>
+    let num1=+prompt('số thứ nhất');
+    let num2=+prompt('số thứ hai');
+    function doiCho(num1,num2) {
+        let b = num1;
+        num1=num2;
+        num2=b;
+        document.write(num1+'<br>'+ num2);
+    }doiCho(num1,num2);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<!--Bài 3: Tạo hàm nhận vào hai tham số.-->
+<!--Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. -->
+<!--Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.-->
+<script>
+ let thamSo1=+prompt('nhập tham số thứ nhất');
+ let thamSo2=+prompt('nhập tham số thứ hai');
+  function compare(thamSo1,thamSo2) {
+ if (thamSo1>thamSo2){
+     return document.write('số thứ nhất lớn hơn');
+ }
+ else if (thamSo1<thamSo2) {
+      return document.write(thamSo1+thamSo2);
+ }
+ else {
+     return document.write('hai số bằng nhau');
+ }
+  }
+  compare(thamSo1,thamSo2);
+</script>
+</body>
+</html>

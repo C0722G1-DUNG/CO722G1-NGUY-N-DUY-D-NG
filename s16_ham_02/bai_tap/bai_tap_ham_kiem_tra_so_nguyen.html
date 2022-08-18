@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<script>
+    let num;
+    for (num=0;num<100;num++){
+        let count=0;
+        soNguyenTo(num);
+        function soNguyenTo(number) {
+        if (number<2){
+            document.write(" ");
+        }
+         else {
+             for (let i=2;i<number;i++){
+                 if (number %i ===0){
+              count++;}
+             }
+        if (count===0){
+        document.write(number+" <br>"); }
+        }
+        }
+    }
+</script>
+</body>
+</html>
