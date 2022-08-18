@@ -10,11 +10,12 @@
     let num1=+prompt('số thứ nhất');
     let num2=+prompt('số thứ hay');
     let num3=+prompt('số thứ ba');
-    let max =0;
-    checkNum(num3,num2,num1);
-    function checkNum(number) {
-
+    let min = 0;
+    function checkNum(num3,num2,num1){
+ return min= Math.min(num1,num2,num3);
     }
+    checkNum(num3,num2,num1);
+    document.write(min);
 </script>
 </body>
 </html>
