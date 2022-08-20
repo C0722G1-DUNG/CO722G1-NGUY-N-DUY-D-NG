@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<canvas id="DemoCanvas" width="500" height="600" style="background: coral"></canvas>;
+<script>
+    class Rectangle {
+        constructor(long,wide) {
+            this.long=long;
+            this.wide=wide;
+        }
+        Cv(){
+            return (this.long+this.wide)*2 ;
+        }
+        S(){
+            return this.long*this.wide;
+        }
+
+    }
+    let rectangle= new Rectangle(10,20);
+    document.write('diện tích là'+rectangle.S()+'<br>'+'Chu vi là'+rectangle.Cv());
+    let canvas = document.getElementById("DemoCanvas");
+    let ctx = canvas.getContext('2d');
+    ctx.fillStyle="#ff0000";
+    ctx.fillRect(10, 10, long, wide);
+</script>
+</body>
+</html>

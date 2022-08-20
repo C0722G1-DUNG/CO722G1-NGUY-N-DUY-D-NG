@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CO722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+
+        fahrenheit = function () {
+            return 9 / 5 * this.c + 32;
+        }
+        kelvins = function () {
+            return this.c + 273.15;
+        }
+    }
+    let temperature = new Temperature(25);
+    document.write('nhiệt độ K =' + temperature.fahrenheit());
+    document.write('nhiệt độ F =' + temperature.kelvins());
+</script>
+</body>
+</html>
