@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng </title>
+</head>
+<body>
+<script>
+    class BongDen{
+        constructor(trangThai) {
+            this.trangThai = trangThai;
+        }
+
+    }
+    class CongTac{
+        constructor() {
+            this.trangThai = false;
+            this.bongDen = null;
+        }
+        batDen(){
+            this.bongDen.trangThai = true;
+            return this.trangThai = true;
+        }
+        tatDen(){
+            this.bongDen.trangThai = false;
+            return this.trangThai = false;
+        }
+        ketNoiVoiDen(bongDen){
+            this.bongDen = bongDen;
+        }
+    }
+    let bongDen1 = new BongDen();
+    let congTac = new CongTac();
+    congTac.ketNoiVoiDen(bongDen1);
+    for (let i = 0; i < 10; i++){
+        document.write("Trạng thái công tắc: " + congTac.batDen()+ "<br>");
+        document.write("Trạng thái bóng đèn: " + bongDen1.trangThai + "<br>");
+        document.write("Trạng thái công tắc: " + congTac.tatDen()+ "<br>");
+        document.write("Trạng thái bóng đèn: " + bongDen1.trangThai + "<br>");
+    }
+
+</script>
+</body>
+</html>
