@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+ <script>
+     let luong = +prompt('lương nhân viên');
+     let tienluong =0;
+     let tienThue=0;
+     if (luong>15){
+         tienThue+=luong*0.2;
+         tienluong+=luong-tienThue;
+     }
+     else if (luong>7) {
+         tienThue+=luong*0.1;
+         tienluong+=luong-tienThue;
+     }
+     else {
+         tienThue+=luong*0.05;
+         tienluong+=luong-tienThue;
+     }
+     document.write('thu nhập đó là'+ tienluong);
+ </script>
+</body>
+</html>

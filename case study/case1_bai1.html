@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1 Nguyễn Duy Dũng</title>
+</head>
+<body>
+<!--Bài 1: Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m theo hình dưới đây.-->
+<script>
+ let n= +prompt('nhập chiều dài');
+ let m = +prompt('nhập chiều rộng');
+ let  south = '<table>';
+ for (let i=1;i<=n;i++) {
+     south += '<tr>';
+     for (j = 1; j <= m; j++) {
+         if (i === 1 || i === n || j === 1 || j === m) {
+             south += ('<td>' + '*' + '</td>');
+         } else {
+             south+=('<td>' + '&nbsp&nbsp' + '</td>');
+         }
+     }south += '<tr>';
+ } south += '</table>';
+ document.write(south);
+</script>
+</body>
+</html>

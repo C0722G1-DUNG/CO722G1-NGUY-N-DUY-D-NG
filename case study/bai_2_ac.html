@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_2</title>
+</head>
+<body>
+<script>
+    function checkString(str) {
+        let count = 0;
+        for (let i=0;i<str.length;i++){
+        if (str[i] >= "A" && str[i] <= "Z") {
+            count++;
+        }
+    }
+    if (count === str.length - count) {
+        document.write('true');
+    } else {
+        document.write('flase')
+    }
+    }
+    let str = prompt('nhập ký tự vào');
+    checkString(str);
+</script>
+</body>
+</html>

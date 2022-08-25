@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài2</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt('nhập chiều dài mảng thứ nhất');
+    let num2 = +prompt('nhập chiều dài mảng thứ hai');
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < num1; i++) {
+        a[i] = +prompt('nhập phần tử thứ nhất');
+    }
+    for (let j = 0; j < num2; j++) {
+        b[j] = +prompt('nhập phần tử thứ hai');
+    }
+    for (let i = 0; i < b.length; i++) {
+        let count =0;
+        for (let j = 0; j < a.length; j++) {
+            if (b[i] !== a[j]) {
+               count++
+            }
+            if (count===a.length){
+                c.push(b[i]);
+            }
+        }
+    }document.write(c);
+</script>
+</body>
+</html>

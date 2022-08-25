@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b2</title>
+</head>
+<body>
+<!--Bài 2: Vẽ tam giác vuông cân rỗng có chiều cao h. Ví dụ: h = 5-->
+<script>
+    let chieuCao = +prompt('nhập chiều cao');
+    let south = '<table>';
+    for (let i=1;i<=chieuCao;i++){
+        south+='<tr>';
+        for (let j=1;j<=chieuCao;j++){
+           if (j===1||i===chieuCao||i===j){
+               south+=('<td>'+'*'+'</td>');
+           }
+           else{
+        south+=('<td>'+'&nbsp&nbsp&nbsp'+'</td>')
+           }
+        }south+='</tr>';
+    }document.write(south);
+</script>
+</body>
+</html>

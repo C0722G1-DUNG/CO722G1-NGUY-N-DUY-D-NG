@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let s1 = "aabacc";
+    let s2 = "adcaa";
+    alert(check(s1, s2))
+    function check(s1,s2) {
+        arr= s1.split("");
+        arr1 = s2.split("");
+        let s=[];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j =0; j < arr1.length; j++) {
+                if (arr[i] === arr1[j]) {
+                  s.push(arr1[j]);
+                  arr1.splice(j,1);
+                  arr.splice(i,1);
+                  j--;
+                  i--;
+                }
+            }
+        }
+        return s;
+    }
+</script>
+</body>
+</html>

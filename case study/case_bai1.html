@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C0722G1</title>
+</head>
+<body>
+<script>
+    let num1 =+prompt('chiều dài');
+    let a=[];
+    for (let j=0;j<num1;j++){
+        a[j] = +prompt('nhập vào mảng');
+    }
+    alert(a)
+    let b= [];
+    let tam =0;;
+    for (let i=0;i<a.length;i++){
+        tam+=a[i];
+        b[i]=tam;
+    }document.write(b);
+</script>
+</body>
+</html>

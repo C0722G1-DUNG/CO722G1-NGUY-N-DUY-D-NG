@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_3</title>
+</head>
+<body>
+<script>
+ let mangA =[5,2,5];
+ let mangB =[6,3,4];
+ let lonNhat =[0];
+ let viTri ;
+ let mang =[];
+ for (let i=0;i<mangA.length;i++){
+     mang[i]=mangA[i]/mangB[i];
+ }
+ for (let j=0;j<mang.length;j++){
+     if (mang[j]>lonNhat){
+         lonNhat=mang[j];
+         viTri=[j];
+     }
+ }document.write(lonNhat+'vi tri'+ viTri+'<br>'+mangA[viTri]+'/'+mangB[viTri]);
+</script>
+</body>
+</html>

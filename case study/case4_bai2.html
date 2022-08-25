@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let s = 'cadddbca';
+    alert(check(s));
+
+    function check(s) {
+        s = s.split("");
+        for (let i = 0; i < s.length; i++) {
+            for (let j = i + 1; j < s.length; j++) {
+                if (s[i] === s[j]) {
+                    s.splice(j, 1);
+                    i--;
+                }
+            }
+        }
+        return s;
+    }
+
+</script>
+</body>
+</html>
