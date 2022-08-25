@@ -5,31 +5,26 @@
     <title>C0722G1 Nguyễn Duy Dũng</title>
 </head>
 <body>
-<input  type="text" id="window">
-<button onclick="chon(1)" value="cafe">1cafe</button>
-<button onclick="chon(2)" value="cam vắt">2cam vắt</button>
-<button onclick="chon(3)" value="nước ép cà rốt">3nước ép cà rốt</button>
-<button onclick="chon(4)" value="nước ép cà chua">4nước ép cà chua</button>
-<button onclick="chon(5)" value="nước lọc">5nước lọc</button>
-<button onclick="chon(6)" value="nước dừa">6nước dừa</button>
-<button onclick="chon2()" value="tính tiền">7tính tiền</button>
 <script>
-    let text='';
-    let arr = [];
-    arr.push(number);
-    let tong =0;
-    let arr2 = [10.000,30.000,40.000,20.000,35.000,25.000];
-    function chon(number){
-        do {
-            for (let i=0;i<arr.length;i++){
-                if (arr[i]===arr2[i]){
-                    tong += (arr2[i] * arr[i]);
-                    document.getElementById('window') .value+= tong;
-                }
+    let str;
+    let num;
+    let tongTien = 0;
+    do {
+        str = +prompt('bấm số để lựa chọn đồ uống\n 1 (cafe)\n 2 (cam vắt)\n ' +
+            '3(nước ép cà rốt)\n 4(nước ép cà chua)\n 5(nước lọc)\n 6(nước dừa)\n 7(thoát gọi món)')
+        let arr = [1, 2, 3, 4, 5, 6];
+        let arr1 = ['cafe', 'cam vắt', 'nước ép cà rốt', 'nước ép cà chua', 'nước lọc', 'nước dừa']
+        let arr2 = [15000, 20000, 25000, 25000, 5000, 20000];
+        for (let i = 0; i < arr.length; i++) {
+            if (str === arr[i]) {
+                num = +prompt(arr1[i] + ' có đơn giá ' + arr2[i] + '\nnhập số lượng cần mua');
+                tongTien += arr2[i] * num;
             }
         }
-        while ()
+
     }
+    while (str !== 7)
+    document.write('hóa đơn của bạn là ' + tongTien);
 </script>
 </body>
 </html>
