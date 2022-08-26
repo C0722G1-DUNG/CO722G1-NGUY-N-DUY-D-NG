@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai bai</title>
+</head>
+<body>
+<p>Sổ số</p>
+<input type="number" class="window">
+<input type="number" class="window">
+<input type="number" class="window">
+<input type="number" class="window">
+<input type="number" class="window">
+<input type="number" class="window">
+<button onclick="chon1()" value="tùy chọn">tùy chọn</button>
+<button onclick="chon()" value="chọn ngẫu nhiên">chọn ngẫu nhiên</button>
+<button onclick="chon2()" value="kết quả">kết quả</button>
+<script>
+    function chon() {
+        a = [];
+        arr = [];
+        for (let i = 0; i < 6; i++) {
+            a[i] = Math.floor(Math.random() * 100);
+            document.getElementsByClassName('window')[i].value = a[i];
+            arr.push(a[i]);
+        }
+    }
+
+    function chon1() {
+        b = [];
+        arr1 = [];
+        for (let i = 0; i < 6; i++) {
+            b[i] = +prompt('nhập số mình chọn')
+            document.getElementsByClassName('window')[i].value = b[i];
+            arr1.push(b[i]);
+        }
+    }
+
+    function chon2() {
+        c = [];
+        arr2 = [];
+        count = 0;
+        for (let i = 0; i < 6; i++) {
+            c[i] = +prompt('nhập kết quả');
+        }
+        alert(c);
+        for (let i = 0; i < arr2.length; i++) {
+            if (arr[i] === arr2)
+                count++;
+            if (arr1[i] === arr2) {
+                count++;
+            }
+        else {
+            break;
+            }
+        }
+        if(count===3){
+            alert('sợ gì');
+        }
+        else {
+            alert('sợ rồi');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baibai</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1, 2, 5, 3],
+        [2, 4, 5, 6]
+    ];
+    alert(check(arr));
+
+    function check(arr) {
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+
+            for (let j = 0; j <= arr[i].length; j++) {
+                let count = 0;
+                for (let k = 1; k <= arr[i][j]; k++) {
+
+                    if (arr[i][j] % k === 0) {
+                        count++;
+                    }
+                }
+                if (count === 2) {
+                    arr1.push(arr[i][j]);
+                }
+            }
+        }
+        return arr1;
+    }
+</script>
+</body>
+</html>

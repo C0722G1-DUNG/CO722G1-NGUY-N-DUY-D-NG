@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai bai</title>
+</head>
+<body>
+<script>
+    let array = [
+        [5, 2, 3, 4],
+        [4, 5,7,9,10,1]
+    ];
+    alert('số lớn nhất'+check(array));
+    alert('số bé nhất'+check1(array));
+
+    function check(array) {
+        let max = 0;
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+               if (array[i][j]>max){
+                     max=array[i][j];
+               }
+            }
+        } return max
+    }
+    function check1(array) {
+        let min = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j]<=min){
+                    min=array[i][j];
+                }
+            }
+        } return min
+    }
+</script>
+</body>
+</html>
