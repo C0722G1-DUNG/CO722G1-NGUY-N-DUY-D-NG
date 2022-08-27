@@ -8,18 +8,16 @@
 <!--Bài 3: Vẽ tam giác cân đặc có chiều cao h. Ví dụ: h = 5-->
 <script>
     let h= +prompt('chiều cao');
-    let south = '<table>';
-    for (let i=1;i<h;i+=2){
-        south+='<tr>';
-        for (let j=1;j<h-i;j++){
-            south+=('<td>'+'&nbsp;'+'</td>');
+
+    for (let i = 0; i <h ; i++) {
+        for (let j = h-1; j >i ; j--) {
+            document.write("&nbsp&nbsp");
         }
-        for (let z=1;z<i;z++){
-            south+=('<td>'+'*'+'</td>');
+        for (let j = 0; j <=i*2; j++) {
+            document.write("*");
         }
-        south+='</tr>';
-    }south+='</table>'
-    document.write(south);
+        document.write("<br>")
+    }
 </script>
 </body>
 </html>

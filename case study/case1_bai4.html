@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai bai</title>
+</head>
+<body>
+<script>
+    let h = +prompt('nhập chiều cao');
+    for (i=1;i<=h;i++){
+        for (j=h-1;j>i;j--){
+            document.write("&nbsp&nbsp");
+        }
+        for (j=1;j <= i *2;j++){
+            if (j===1||j===i*2||i===h){
+                document.write("*");
+            }
+            else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>

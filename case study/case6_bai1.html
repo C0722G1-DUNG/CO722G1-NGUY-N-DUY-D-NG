@@ -18,47 +18,42 @@
 <script>
     function chon() {
         a = [];
-        arr = [];
         for (let i = 0; i < 6; i++) {
-            a[i] = Math.floor(Math.random() * 100);
+            a[i] = Math.floor(Math.random() * 99);
             document.getElementsByClassName('window')[i].value = a[i];
-            arr.push(a[i]);
+
         }
     }
 
     function chon1() {
         b = [];
-        arr1 = [];
         for (let i = 0; i < 6; i++) {
             b[i] = +prompt('nhập số mình chọn')
             document.getElementsByClassName('window')[i].value = b[i];
-            arr1.push(b[i]);
+
         }
     }
 
     function chon2() {
         c = [];
-        arr2 = [];
-        count = 0;
+        let count1 = 0;
+        let count = 0;
         for (let i = 0; i < 6; i++) {
-            c[i] = +prompt('nhập kết quả');
+            c[i] = Math.floor(Math.random() * 99);
+
         }
         alert(c);
-        for (let i = 0; i < arr2.length; i++) {
-            if (arr[i] === arr2)
+        for (let i = 0; i < c.length; i++) {
+            if (a[i] === c[i]) {
                 count++;
-            if (arr1[i] === arr2) {
-                count++;
-            }
-        else {
-            break;
+            } else if (b[i] === c[i]) {
+                count1++;
             }
         }
-        if(count===3){
-            alert('sợ gì');
-        }
-        else {
-            alert('sợ rồi');
+        if (count === 3 || count1 === 3) {
+            alert('trúng');
+        } else {
+            alert('chưa trúng');
         }
     }
 </script>
